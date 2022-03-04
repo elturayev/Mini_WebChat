@@ -169,7 +169,7 @@ uploads.onchange = async (event) => {
 
     let formData = new FormData()
     formData.append('file', uploads.files[0])
-    formData.append('toUserId', a.user_id)
+    formData.append('toUserId', clickUser.user_id)
 
     let response = await fetch('/messages', {
         method: 'POST',
